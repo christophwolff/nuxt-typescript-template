@@ -1,0 +1,36 @@
+{
+  "version": "0.0.1",
+  "name": "typescript-nuxt",
+  "description": "Nuxt and Typescript Template",
+  "private": false,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "dev-debug": "node --inspect node_modules/.bin/nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "tslint --project .",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "nuxt": "latest",
+    "nuxt-ts": "^2.4.2",
+    "vue-property-decorator": "^7.3.0",
+    "vuex-class": "^0.3.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.4.2",
+    "@nuxt/vue-app": "^2.4.2",
+    "@types/node": "^10.12.19",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "jest": "^24.0.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.1",
+    "ts-vue-plugin": "^0.2.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "vue-jest": "^3.0.2"
+  }
+}
