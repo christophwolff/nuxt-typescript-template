@@ -4,33 +4,33 @@
   "description": "Nuxt and Typescript Template",
   "private": false,
   "scripts": {
-    "dev": "nuxt-ts",
-    "dev-debug": "node --inspect node_modules/.bin/nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "nuxt",
+    "dev-debug": "node --inspect node_modules/.bin/nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
     "lint": "tslint --project .",
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "nuxt": "latest",
-    "nuxt-ts": "^2.4.2",
-    "vue-property-decorator": "^7.3.0",
-    "vuex-class": "^0.3.1"
+    "nuxt": "^2.8.1",
+    "ts-node": "^8.2.0",
+    "vue-property-decorator": "^8.1.1",
+    "vuex-class": "^0.3.2"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.4.2",
-    "@nuxt/vue-app": "^2.4.2",
-    "@types/node": "^10.12.19",
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxt/vue-app": "^2.8.1",
+    "@types/node": "^12.0.7",
     "@vue/test-utils": "^1.0.0-beta.27",
-    "jest": "^24.0.0",
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
-    "prettier": "^1.16.1",
+    "jest": "^24.8.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
     "ts-vue-plugin": "^0.2.0",
-    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^8.0.1",
     "tslint-plugin-prettier": "^2.0.1",
-    "vue-jest": "^3.0.2"
+    "vue-jest": "^3.0.4"
   }
 }
