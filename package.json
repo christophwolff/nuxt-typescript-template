@@ -1,36 +1,49 @@
 {
-  "version": "0.0.1",
+  "version": "0.1.0",
   "name": "typescript-nuxt",
   "description": "Nuxt and Typescript Template",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophwolff/nuxt-typescript-template.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christophwolff/nuxt-typescript-template/issues"
+  },
+  "homepage": "https://github.com/christophwolff/nuxt-typescript-template#readme",
   "scripts": {
     "dev": "nuxt",
     "dev-debug": "node --inspect node_modules/.bin/nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "tslint --project .",
-    "post-update": "yarn upgrade --latest"
+    "lint-staged": "lint-staged",
+    "lint:all": "npm run lint -- .",
+    "lint:fix:all": "npm run lint:fix -- .",
+    "lint:fix": "eslint --ignore-path .gitignore --ext ts --ext tsx --ext js --ext jsx --ext vue --fix",
+    "lint": "eslint --ignore-path .gitignore--ext ts --ext tsx --ext js --ext jsx --ext vue",
+    "post-update": "yarn upgrade --latest",
+    "type-check": "tsc"
   },
   "dependencies": {
     "nuxt": "^2.8.1",
+    "nuxt-property-decorator": "^2.3.0",
     "ts-node": "^8.2.0",
-    "vue-property-decorator": "^8.1.1",
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.1",
     "@nuxt/vue-app": "^2.8.1",
     "@types/node": "^12.0.7",
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "jest": "^24.8.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-vue": "^5.2.2",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
     "prettier": "^1.18.2",
-    "ts-vue-plugin": "^0.2.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-config-standard": "^8.0.1",
-    "tslint-plugin-prettier": "^2.0.1",
-    "vue-jest": "^3.0.4"
+    "ts-vue-plugin": "^0.2.0"
   }
 }
